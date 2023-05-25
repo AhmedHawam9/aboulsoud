@@ -1,0 +1,78 @@
+@media only screen and (max-width: 991.98px) {
+  .header {
+    height: fit-content;
+    .title {
+      margin-top: 2rem;
+    }
+    img {
+      margin: 2rem 0;
+    }
+  }
+  .best {
+    margin: 3rem 0;
+    .container {
+      flex-direction: column;
+      .list_best {
+        width: 100%;
+        border-bottom: 1px solid #acafbc;
+        border-inline-end: transparent;
+        padding: 1.5rem 0;
+        &:last-child {
+          border-bottom: transparent;
+        }
+      }
+    }
+  }
+  .offer_home {
+    img {
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    .title {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+    }
+    .text {
+      margin: 1rem auto 2rem !important;
+      width: 90%;
+      text-align: center;
+    }
+    .SecondaryButton {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  .contact {
+    height: fit-content;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    &::after {
+      content: unset;
+    }
+    &::before {
+      content: unset;
+    }
+    form {
+      position: unset;
+      margin-top: 2rem;
+      &::before {
+        content: unset;
+      }
+    }
+  }
+  .offers {
+    .card_offer {
+      .data {
+        .title, .text {
+          width: 80%;
+        }
+      }
+      .image_offer {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

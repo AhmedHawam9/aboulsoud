@@ -1,0 +1,341 @@
+$PrimaryColor: #3D5AA8;
+$SecondColor: #ED2228;
+$PrimaryText: #0D1324;
+$SecondText: #767983;
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+
+@import "./_navBar.scss";
+@import "./_auth.scss";
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  ul {
+    padding: 0;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  p {
+    margin-bottom: 0 !important;
+  }
+  .btn:focus,
+  .form-check-input:focus,
+  .form-check :focus,
+  .btn-check:focus + .btn,
+  .btn-close:focus,
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+  .btn.show {
+    border-color: transparent !important;
+  }
+  .swal2-title {
+    font-family: "semibold";
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    border-bottom: 1px solid #888888 !important;
+  }
+  &:lang(en) {
+    direction: ltr;
+  }
+  &:lang(ar) {
+    direction: rtl;
+  }
+  .PrimaryButton {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "regular";
+    font-size: .8rem;
+    padding: .5rem 1.5rem;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+  .SecondaryButton {
+    background-color: $SecondColor;
+    color: #fff;
+    font-family: "regular";
+    font-size: .8rem;
+    padding: .5rem 1.5rem;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $SecondColor;
+      color: $SecondColor;
+      transition: .7s ease-in-out;
+    }
+  }
+  .title_section {
+    text-align: center;
+    font-family: "bold";
+    color: $PrimaryText;
+  }
+  .header {
+    background-color: $PrimaryColor;
+    height: 88vh;
+    .row {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: 400px
+    }
+    .title {
+      font-family: "bold";
+      color: #fff;
+      line-height: 1.5;
+      font-size: 2.3rem;
+    }
+    .text {
+      font-family: "regular";
+      color: #fff;
+      font-size: 1rem;
+      margin: 1.5rem 0 3rem !important;
+    }
+    .SecondaryButton {
+      padding: .5rem 3rem;
+      border-radius: 30px;
+    }
+  }
+  .best {
+    margin: 5rem 0;
+    .title_section {
+      margin-bottom: 3rem;
+    }
+    .container {
+      display: flex;
+      .list_best {
+        width: 30.3%;
+        text-align: center;
+        margin-inline-end: 3%;
+        border-inline-end: 1px solid #ACAFBC;
+        &:last-child {
+          border-inline-end: transparent
+        }
+        img {
+          background-color: rgba(61, 90, 168, .1);
+          width: 80px;
+          height: 80px;
+          padding: .7rem;
+          border-radius: 50%;
+        }
+        .title {
+          font-family: "bold";
+          color: $PrimaryText;
+          margin: 2rem 0 1rem;
+        }
+        .text {
+          font-family: "regular";
+          color: $SecondText;
+          width: 90%;
+          margin: 0 auto;
+          font-size: .9rem
+        }
+      }
+    }
+  }
+  .offer_home {
+    img {
+      width: 90%;
+      height: 350px;
+    }
+    .title {
+      font-family: "bold";
+      color: $PrimaryText;
+      line-height: 1.5;
+      font-size: 2.3rem;
+    }
+    .text {
+      font-family: "regular";
+      color: $SecondText;
+      font-size: 1rem;
+      margin: 1.5rem 0 2.5rem !important;
+    }
+    .SecondaryButton {
+      padding: .5rem 3rem;
+      border-radius: 30px;
+    }
+  }
+  .contact {
+    background-color: #ED2228;
+    height: 300px;
+    margin-top: 20rem;
+    position: relative;
+    .row {
+      align-items: center;
+    }
+    &::after {
+      content: "";
+      background-image: url("../media/image/icon/right_top_shape.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70px;
+      height: 70px;
+    }
+    &::before {
+      content: "";
+      background-image: url("../media/image/icon/right_bottom_shape.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 70px;
+      height: 70px;
+    }
+    .title {
+      font-family: "bold";
+      color: #fff;
+    }
+    .col-lg-5 {
+      position: relative;
+    }
+    form {
+      background-color: #F4F4F4;
+      width: 100%;
+      padding: 2.5rem 2rem;
+      position: absolute;
+      border-radius: 10px;
+      top: -23rem;
+      &::before {
+        content: "";
+        background-image: url("../media/image/icon/triangle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -10%;
+        top: -10%;
+        width: 90px;
+        height: 90px;
+      }
+      .form-group {
+        margin-bottom: 1.5rem;
+        label {
+          font-family: "medium";
+          color: $PrimaryText;
+        }
+        .form-control {
+          background-color: transparent;
+          border-color: transparent;
+          border-bottom: 1px solid #888888;
+          font-family: "regular";
+          color: #8E9196;
+          font-size: .9rem;
+          padding: .375rem 0;
+        }
+      }
+      .btn {
+        font-family: "medium";
+        background-color: $PrimaryColor;
+        color: #fff;
+        font-size: .8rem;
+        padding: .75rem 3rem;
+        margin-top: 1rem;
+        border-radius: 30px;
+        transition: .7s ease-in-out;
+        &:hover {
+          background-color: transparent;
+          color: $PrimaryColor;
+          border: 1px solid $PrimaryColor;
+          transition: .7s ease-in-out;
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    background-color: $PrimaryColor;
+    padding: 3rem;
+    text-align: center;
+    .title {
+      font-family: "bold";
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+  .offers {
+    .title_section {
+      text-align: start;
+      margin-top: 2rem;
+      margin-bottom: 2rem
+    }
+    .card_offer {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      &:nth-child(odd) {
+        background-color: rgba(61, 90, 168, .1);
+      }
+      &:nth-child(even) {
+        background-color: rgba(237, 34, 40, .1);
+      }
+      .data {
+        .title {
+          font-family: "bold";
+          color: $PrimaryText;
+          width: 65%;
+          font-size: 2.5rem;
+        }
+        .text {
+          font-family: "regular";
+          color: $SecondText;
+          width: 65%;
+          margin: .7rem 0 1.5rem !important;
+        }
+        .btn {
+          color: $PrimaryColor;
+          border: 1px solid $PrimaryColor;
+          font-family: "medium";
+          font-size: .8rem;
+          padding: .7rem 3rem;
+          border-radius: 35px;
+          transition: .7s ease-in-out;
+          &:hover {
+            background-color: $PrimaryColor;
+            color: #fff;
+            transition: .7s ease-in-out;
+          }
+        }
+      }
+      .image_offer {
+        width: 300px;
+        height: 300px
+      }
+    }
+  }
+  @import "./_responsive.scss";
+}
+

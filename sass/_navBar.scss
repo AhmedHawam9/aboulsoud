@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+  background-color: #F7F5FA;
+  .logo {
+    width: 100px;
+  }
+  .buttons {
+    .PrimaryButton {
+      border-radius: 40px;
+    }
+    .lang {
+      border-radius: 50%;
+      border: 1px solid $PrimaryColor;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      margin-inline-start: 1rem;
+    }
+  }
+}
