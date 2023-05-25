@@ -75,4 +75,23 @@
       }
     }
   }
+  footer {
+    .logo-col {
+      img {
+        width: 30%;
+      }
+      p {
+        width: 50%;
+      }
+    }
+    .col-links {
+      ul {
+        display: flex;
+        width: 100%;
+        li {
+          width: 33.3%;
+        }
+      }
+    }
+  }
 }

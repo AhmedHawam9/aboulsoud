@@ -23,4 +23,24 @@
       }
     }
   }
+  footer {
+    padding: 3% 1rem 0;
+    .logo-col {
+      img {
+        width: 60%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .col-links {
+      ul {
+        display: block;
+        width: 100%;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
